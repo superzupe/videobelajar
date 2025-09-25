@@ -5,135 +5,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
-    <style>
-        .font-poppins {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .font-dmsans {
-            font-family: 'DM sans', sans-serif;
-        }
-
-        .text-dmsans {
-            font-family: 'DM sans', sans-serif;
-            font-weight: 400;
-            color: #333333AD;
-            font-size: 14px;
-        }
-
-        @media (min-width: 1024px) {
-            .text-dmsans {
-                font-size: 16px
-            }
-        }
-    </style>
+        <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-    <nav
-        class="fixed top-0 left-0 flex bg-white border-b border-[#3A35411F] w-full px-6 py-3 shadow-[0px_9px_10px_rgba(0,0,0,0.1)] lg:px-[120px] lg:shadow-none">
+    <nav>
         <a href="register.html">
-            <img src="/icon/logo.svg" alt="videobelajar logo">
+            <img src="assets/icon/videobelajar-icon.svg" alt="videobelajar logo">
         </a>
     </nav>
 
-    <section class="login-page min-h-screen flex justify-center items-center m-auto my-22 gap-9">
-        <div class="card max-w-sm lg:max-w-xl w-full bg-white border border-[#f1f1f1] rounded-ms p-5 lg:p-9">
-            <div class="flex flex-col justify-center items-center text-center gap-5 lg:gap-9">
-                <div class="space-y-[10px]">
-                    <h3 class="text-2xl lg:text-3xl text-[#222325] font-semibold font-poppins">Pendaftaran Akun</h3>
-                    <p class="text-dmsans">Yuk, daftarkan akunmu sekarang juga!</p>
+    <section class="container">
+            <div class="card">
+                <div class="heading">
+                    <h3 class="heading-title">Pendaftaran Akun</h3>
+                    <p class="text-base">Yuk, daftarkan akunmu sekarang juga!</p>
                 </div>
 
-                <div class="space-y-5 lg:space-y-6">
-                    <!-- form -->
-                    <div class="w-70 lg:w-lg space-y-3 lg:space-y-4">
-                        <div class="flex flex-col text-left">
-                            <label for="nama" class="text-dmsans">
-                                Nama Lengkap <span class="text-red-500">*</span>
+                <div class="form">
+                    <div class="form-group-wrapper">
+                        <div class="form-group">
+                            <label for="nama" class="text-base">
+                                Nama Lengkap <span>*</span>
                             </label>
-                            <input type="text" id="nama" autocomplete="name" required
-                                class="mt-1 px-4 py-2 border border-[#f1f1f1] font-dmsans text-[#222325] text-sm lg:text-base rounded-md focus:outline-none focus:ring-2 focus:ring-[#333333AD] transition duration-300 ease-in-out">
+                            <input type="text" id="nama" name="nama" autocomplete="name" required
+                                class="form-input">
                         </div>
-                        <div class="flex flex-col text-left">
-                            <label for="email" class="text-dmsans">
-                                E-mail <span class="text-red-500">*</span>
+                        <div class="form-group">
+                            <label for="email" class="text-base">
+                                E-mail <span>*</span>
                             </label>
-                            <input type="email" id="email" autocomplete="email" required
-                                class="mt-1 px-4 py-2 border border-[#f1f1f1] font-dmsans text-[#222325] text-sm lg:text-base rounded-md focus:outline-none focus:ring-2 focus:ring-[#333333AD] transition duration-300 ease-in-out">
+                            <input type="email" id="email" name="email" autocomplete="email" required
+                                class="form-input">
                         </div>
-                        <div class="flex flex-col text-left">
-                            <label for="phone" class="text-dmsans">
-                                No. Hp <span class="text-red-500">*</span>
+                        <div class="form-group">
+                            <label for="phone" class="text-base">
+                                No. Hp <span>*</span>
                             </label>
-                            <div class="flex flex-row gap-x-4">
-                                <select id="countryCode" class="mt-1 px-4 py-2 border border-[#f1f1f1] font-dmsans text-[#222325] text-sm lg:text-base rounded-md focus:outline-none focus:ring-2 focus:ring-[#333333AD] transition duration-300 ease-in-out">
+                            <div class="form-phone">
+                                <select id="countryCode" class="form-input phone">
                                     <option value="+62">🇮🇩 +62</option>
                                     <option value="+60">🇲🇾 +60</option>
                                     <option value="+1">🇺🇸 +1</option>
                                     <option value="+44">🇬🇧 +44</option>
                                 </select>
-                                <input type="tel" id="phone" autocomplete="tel-country-code" required
-                                    class="w-full mt-1 px-4 py-2 border border-[#f1f1f1] font-dmsans text-[#222325] text-sm lg:text-base rounded-md focus:outline-none focus:ring-2 focus:ring-[#333333AD] transition duration-300 ease-in-out">
+                                <input type="tel" id="phone" name="phone" autocomplete="tel-country-code" required
+                                    class="form-input">
                             </div>
                         </div>
-                        <div class="flex flex-col text-left">
-                            <label for="sandi" class="text-dmsans">
-                                Kata Sandi <span class="text-red-500">*</span>
+                        <div class="form-group">
+                            <label for="sandi" class="text-base">
+                                Kata Sandi <span>*</span>
                             </label>
-                            <input type="password" id="sandi" autocomplete="current-password" required
-                                class="mt-1 px-4 py-2 border border-[#f1f1f1] font-dmsans text-[#222325] text-sm lg:text-base rounded-md focus:outline-none focus:ring-2 focus:ring-[#333333AD] transition duration-300 ease-in-out">
+                            <input type="password" id="sandi" name="sandi" autocomplete="current-password" required
+                                class="form-input">
                         </div>
-                        <div class="flex flex-col text-left">
-                            <label for="confirm" class="text-dmsans">
-                                Konfirmasi Kata Sandi <span class="text-red-500">*</span>
+                        <div class="form-group">
+                            <label for="confirm" class="text-base">
+                                Konfirmasi Kata Sandi <span>*</span>
                             </label>
-                            <input type="password" id="confirm" autocomplete="current-password" required
-                                class="mt-1 px-4 py-2 border border-[#f1f1f1] font-dmsans text-[#222325] text-sm lg:text-base rounded-md focus:outline-none focus:ring-2 focus:ring-[#333333AD] transition duration-300 ease-in-out">
+                            <input type="password" id="confirm" name="confirm" autocomplete="current-password" required
+                                class="form-input">
                         </div>
-                        <div class="text-right">
-                            <a href="#"
-                                class="text-sm lg:text-base text-[#4A505C] font-medium font-dmsans hover:text-[#333333AD] transition duration-300 ease-in-out">Lupa
-                                password?</a>
+                        <div class="forgot-password">
+                            <a href="#">Lupa password?</a>
                         </div>
                     </div>
 
-                    <div class="w-70 lg:w-lg space-y-4">
-                        <!-- button masuk-daftar -->
+                    <div class="btn">
                         <button type="submit"
-                            class="w-full py-[10px] bg-[#3ECF4C] rounded-[10px] cursor-pointer text-white text-sm lg:text-base font-medium font-dmsans hover:bg-[#34B843] transition duration-300 ease-in-out">
+                            class="btn-primary submit">
                             Masuk
                         </button>
                         <button type="submit"
-                            class="block w-full py-[10px] bg-[#E2FCD9CC] rounded-[10px] cursor-pointer text-[#3ECF4C] text-sm lg:text-base font-medium font-dmsans hover:bg-[#C0FAB4] transition duration-300 ease-in-out">
+                            class="btn-primary reg">
                             Daftar
                         </button>
                     </div>
 
-                    <div class="flex items-center gap-1">
-                        <div class="flex-1 h-px bg-[#f1f1f1]"></div>
-                        <span class="text-dmsans">atau</span>
-                        <div class="flex-1 h-px bg-[#f1f1f1]"></div>
+                    <div class="divider">
+                        <div class="divider-line"></div>
+                        <span class="text-base">atau</span>
+                        <div class="divider-line"></div>
                     </div>
                     <div
-                        class="w-70 lg:w-lg border border-[#F1F1F1] rounded-[10px] hover:border-[#333333AD] transition duration-300 ease-in-out">
+                        class="btn">
                         <button type="button"
-                            class="flex flex-row justify-center w-full items-center px-[26px] py-2 gap-2 cursor-pointer">
-                            <img src="icon/google-icon.svg" alt="google-icon">
-                            <span class="text-[#4A505C] text-sm lg:text-base font-semibold font-dmsans">Masuk dengan
+                            class="btn-social">
+                            <img src="assets/icon/google-icon.svg" alt="google-icon">
+                            <span>Masuk dengan
                                 Google</span>
                         </button>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 </body>
 

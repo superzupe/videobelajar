@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --border-primary: #f1f1f1;
+    --border-secondary: #333333AD;
+    --border-tertiary: #3A35411F;
+
+    --text-primary: #222325;
+    --text-secondary: #333333AD;
+    --text-tertiary: #4A505C;
+
+    --btn-1: #3ECF4C;
+    --btn-2: #34B843;
+    --btn-3: #E2FCD9CC;
+    --btn-4: #C0FAB4;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 120px;
+    background-color: white;
+    border-bottom: 1px solid var(--border-tertiary);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin: 64px 0;
+    min-height: 100vh;
+    padding: 64px 120px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 590px;
+    padding: 36px;
+    gap: 36px;
+    border: 1px solid var(--border-primary);
+    border-radius: 4px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heading-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--text-primary);
+}
+
+.text-base {
+    font-family: 'DM sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 518px;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+
+.form-phone {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 518px;
+}
+
+label span {
+    color: red;
+}
+
+.form-input {
+    width: 518px;
+    padding: 8px 16px;
+    font-family: 'DM sans', sans-serif;
+    font-size: 16px;
+    color: var(--text-primary);
+    border: 1px solid var(--border-primary);
+    border-radius: 6px;
+    transition: all 300ms ease-in-out;
+}
+
+.phone {
+    width: 156px;
+}
+
+.form-input:focus, .form-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px var(--border-secondary);
+}
+
+.forgot-password {
+    text-align: end;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    font-family: 'DM sans', sans-serif;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    font-size: 16px;
+    transition: all 300ms ease-in-out;
+}
+
+.forgot-password a:hover {
+    color: var(--text-secondary);
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    width: 518px;
+    height: 100px;
+    gap: 16px;
+}
+
+.btn-primary {
+    padding: 10px 0;
+    font-family: "DM sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.submit {
+    background-color: var(--btn-1);
+    color: white;
+
+}
+
+.submit:hover {
+    background-color: var(--btn-2);
+}
+
+.reg {
+    text-decoration: none;
+    background-color: var(--btn-3);
+    color: var(--btn-1);
+}
+
+.reg:hover {
+    background-color: var(--btn-4);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background-color: var(--border-primary);
+}
+
+
+.btn-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 8px;
+    width: 518px;
+    border: 1px solid var(--border-primary);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.btn-social:hover {
+    border: 1px solid var(--border-secondary);
+}
+
+.btn-social span {
+    font-family: 'DM sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text-tertiary);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 640px) {
+    nav {
+        padding: 12px 24px;
+        box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+        padding: 28px 20px;
+    }
+
+    .card {
+        padding: 20px;
+        gap: 20px;
+        width: 320px;
+    }
+
+    .heading-title {
+        font-size: 24px;
+    }
+
+    .text-base, .form-input, .forgot-password a, .btn-social span {
+        font-size: 14px;
+    }
+
+    .form {
+        gap: 20px;
+    }
+
+    .form-group-wrapper, .form-phone, .btn {
+        width: 280px;
+    }
+
+    .form-group {
+        gap: 12px;
+    }
+
+    .phone {
+        width: 122px
+    }
+
+    .btn-primary {
+        padding: 7px 0;
+        font-size: 14 px;
+    }
+
+
+    .btn-social {
+        padding: 8px 0;
+        gap: 8px;
+        width: 280px;
+    }
+}
