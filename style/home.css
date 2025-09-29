@@ -1,0 +1,735 @@
+.text-base {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.fa-bars {
+    display: block;
+    width: 24px;
+    height: 24px;
+    color: var(--text-tertiary);
+}
+
+.fa-bars:hover {
+    color: var(--text-secondary);
+}
+
+.nav-link, .nav-avatar {
+    display: none;
+
+}
+
+.hero, .cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(#000000CC, #000000CC),
+        url(../assets/image/banner-hero.png);
+    background-size: cover;
+    width: 100%;
+    max-width: 320px;
+    height: 400px;
+    padding: 64px 20px;
+    gap: 24px;
+    border: none;
+    border-radius: 10px;
+}
+
+.hero-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.hero-header h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--text-fourthy);
+}
+
+.hero-header p {
+    color: var(--text-fourthy);
+}
+
+.hero-btn {
+    width: 280px;
+    padding: 10px 26px;
+    gap: 8px;
+    background-color: var(--btn-1);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-fourthy);
+    border: none;
+    border-radius: 10px;
+}
+
+.hero-btn:hover {
+    background-color: var(--btn-2)
+}
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    min-height: 1683px;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+.videos-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.videos-header h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary)
+}
+
+.videos-filter {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+
+.videos-filter ul {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.videos-filter li {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: 46px;
+    padding: 20px 25px 20px 0;
+    list-style: none;
+}
+
+.videos-filter li a {
+    text-decoration: none;
+}
+
+.filter {
+    color: var(--text-fifthy);
+}
+
+.filter-divider {
+    width: 10%;
+    height: 6px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--text-fifthy);
+}
+
+
+.videos-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-primary);
+    width: 100%;
+    max-width: 320px;
+    min-height: 147px;
+    padding: 16px;
+    gap: 8px;
+    border: 1px solid var(--border-secondary);
+    border-radius: 10px;
+}
+
+.card:hover {
+    border: 1px solid var(--border-tertiary)
+}
+
+
+.card-main {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.card-main img {
+    width: 82px;
+    height: 82px;
+    object-fit: cover;
+    border: none;
+    border-radius: 10px;
+}
+
+.card-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-title h6 {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary)
+}
+
+.subtitle, .subtitle-2 {
+    display: none;
+}
+
+.card-instructor {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.card-instructor img {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+}
+
+.instructor-identity h6 {
+    color: var(--text-primary)
+}
+
+.instructor-identity p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-secondary)
+}
+
+.company {
+    display: none;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-rating {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.card-rating p {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    color: var(--text-sixthy);
+    cursor: pointer;
+}
+
+.rating input:checked~label {
+    color: var(--btn-7);
+}
+
+.rating input:hover,
+.rating input:hover~label {
+    color: var(--btn-7)
+}
+
+.card-price {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--btn-1)
+}
+
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#000000CC, #000000CC),
+        url(../assets/image/banner-cta.png);
+    background-size: cover;
+    width: 100%;
+    max-width: 320px;
+    height: 400px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.cta-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    gap: 40px;
+}
+
+.cta-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 4px
+}
+
+
+.cta-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-sixthy)
+}
+
+.cta-header h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-fourthy)
+}
+
+.cta-desc {
+    color: var(--text-seventhy)
+}
+
+.cta-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px
+}
+
+.cta-form input {
+    text-align: center;
+    width: 280px;
+    padding: 10px 8px 10px 12px;
+    color: var(--text-primary);
+    border: 1px solid var(--border-primary);
+    border-radius: 6px;
+}
+
+.cta-form input:focus {
+    outline: var(--border-secondary);
+
+}
+
+.cta-form button {
+    width: 280px;
+    padding: 10px;
+    background-color: var(--btn-7);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-fourthy);
+    border: none;
+    border-radius: 6px;
+}
+
+.cta-form button:hover {
+    background-color: var(--btn-8);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 427px;
+    padding: 20px;
+    gap: 16px;
+    background-color: var(--bg-primary);
+    border-top: 1px solid var(--border-secondary);
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    max-width: 320px;
+    gap: 16px;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 320px;
+    gap: 16px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-info h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.footer-info p {
+    color: var(--text-primary)
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-col h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-primary)
+}
+
+.footer-col button {
+    background-color: var(--bg-primary);
+    border: none;
+}
+
+.fa-chevron-right {
+    color: var(--text-secondary);
+}
+
+.fa-chevron-right:hover {
+    color: var(--text-tertiary);
+}
+
+.footer-col ul {
+    display: none;
+}
+
+.footer-divider {
+    width: 320px;
+    height: 1px;
+    margin: 32px 0 0 0;
+    background-color: var(--border-secondary);
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 320px;
+    gap: 12px;
+}
+
+.footer-bottom ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.footer-bottom ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    padding: 4px;
+    list-style: none;
+    border: 1px solid var(--border-tertiary);
+    border-radius: 50%;
+}
+
+.footer-bottom ul li:hover {
+    border: 1px solid var(--border-secondary);
+}
+
+.fa-brands {
+    width: 20px;
+    color: var(--text-primary)
+}
+
+
+
+@media (min-width: 1024px) {
+    .text-base {
+        font-size: 16px;
+    }
+
+    .nav-link {
+        display: block;
+    }
+
+    .nav-link:hover {
+        font-weight: 700;
+        color: var(--text-tertiary)
+    }
+
+    .nav-avatar {
+        display: block;
+        width: 44px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .nav-avatar:hover {
+        box-shadow: 0 0 1px 1px var(--border-tertiary);
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+    .hero-content {
+        max-width: 1200px;
+        min-height: 400px;
+        padding: 90px 140px 64px;
+    }
+
+    .hero-header h1 {
+        font-size: 48px;
+    }
+
+    .hero-btn {
+        width: 369px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .videos {
+        max-width: 1200px;
+        min-height: 1525px;
+        gap: 32px;
+    }
+
+    .videos-header h3 {
+        font-size: 32px;
+    }
+
+    .videos-filter {
+        width: 612px;
+    }
+
+    .videos-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        max-width: 384px;
+        min-height: 426px;
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .card-main {
+        flex-direction: column;
+    }
+
+    .card-main img {
+        width: 344px;
+        height: 193px
+    }
+
+    .card-title {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .card-title h6 {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        display: block;
+    }
+
+    .card:hover .subtitle {
+        display: none;
+    }
+
+    .card:hover .subtitle-2 {
+        display: block;
+    }
+
+    .card-instructor {
+        gap: 10px
+    }
+
+    .card-instructor img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .instructor-identity p {
+        font-size: 14px;
+    }
+
+    .company {
+        display: inline;
+    }
+
+    .company span {
+        font-weight: 700;
+    }
+
+    .card-price {
+        font-size: 24px;
+    }
+
+    .cta-content {
+        max-width: 1200px;
+        padding: 90px 140px 64px
+    }
+
+    .cta-body {
+        width: 525px;
+    }
+
+    .cta-label {
+        font-size: 18px;
+    }
+
+    .cta-header h3 {
+        font-size: 32px;
+    }
+
+    .cta-form {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        min-height: 58px;
+        padding: 8px;
+        gap: 20px;
+        background-color: var(--bg-primary);
+        border: none;
+        border-radius: 10px;
+    }
+
+    .cta-form input {
+        text-align: start;
+        width: 357px;
+        padding: 0 0 0 8px;
+    }
+
+    .cta-form button {
+        width: 132px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 60px 120px;
+        gap: 20px
+    }
+
+    .footer-top {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1200px;
+    }
+
+    .footer-brand {
+        width: 352px;
+        gap: 16px;
+    }
+
+    .footer-info {
+        gap: 12px;
+    }
+
+    .footer-info h4 {
+        font-size: 18px;
+    }
+
+    .footer-link {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .footer-col {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .footer-col button {
+        display: none;
+    }
+
+    .footer-col ul {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .footer-col ul li {
+        list-style: none;
+    }
+
+    .footer-col ul li a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--text-secondary);
+    }
+
+    .footer-divider {
+        width: 1200px;
+    }
+
+    .footer-bottom {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 1200px;
+    }
+}

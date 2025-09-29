@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM sans", sans-serif;
+    transition: all .3s ease-in-out;
+}
+
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #000000CC;
+
+    --border-primary: #f1f1f1;
+    --border-secondary: #3A35411F;
+    --border-tertiary: #333333AD;
+
+    --text-primary: #222325;
+    --text-secondary: #333333AD;
+    --text-tertiary: #4A505C;
+    --text-fourthy: #ffffff;
+    --text-fifthy: #F64920;
+    --text-sixthy: #C1C2C4;
+    --text-seventhy: #F4F5FA;
+
+    --btn-1: #3ECF4C;
+    --btn-2: #34B843;
+    --btn-3: #E2FCD9CC;
+    --btn-4: #C0FAB4;
+    --btn-5: #FEE8D2CC;
+    --btn-6: #FECAA5;
+    --btn-7: #FFBD3A;
+    --btn-8: #E6A732;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    padding: 12px 24px;
+    background-color: var(--bg-primary);
+    border-bottom: 1px solid var(--border-secondary);
+    box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 193.03px;
+    height: 30.08px;
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 12px 120px;
+        box-shadow: none;
+    }
+}
