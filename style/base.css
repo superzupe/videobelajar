@@ -9,32 +9,42 @@
     transition: all .3s ease-in-out;
 }
 
+
 :root {
-    --bg-primary: #ffffff;
-    --bg-secondary: #000000CC;
+    --bg-main: #ffffff;
+    --bg-overlay: #000000CC;
 
-    --border-primary: #f1f1f1;
-    --border-secondary: #3A35411F;
-    --border-tertiary: #333333AD;
+    --border-light: #f1f1f1;
+    --border-medium: #3A35411F;
+    --border-dark: #333333AD;
 
-    --text-primary: #222325;
-    --text-secondary: #333333AD;
-    --text-tertiary: #4A505C;
-    --text-fourthy: #ffffff;
-    --text-fifthy: #F64920;
-    --text-sixthy: #C1C2C4;
-    --text-seventhy: #F4F5FA;
+    --text-main: #222325;
+    --text-base: #333333AD;
+    --text-gray: #4A505C;
+    --text-inverse: #ffffff;
+    --text-accent: #F64920;
+    --text-gray-light: #C1C2C4;
+    --text-bg-light: #F4F5FA;
 
-    --btn-1: #3ECF4C;
-    --btn-2: #34B843;
-    --btn-3: #E2FCD9CC;
-    --btn-4: #C0FAB4;
-    --btn-5: #FEE8D2CC;
-    --btn-6: #FECAA5;
-    --btn-7: #FFBD3A;
-    --btn-8: #E6A732;
+    --btn-primary: #3ECF4C;
+    --btn-primary-hover: #34B843;
+    --btn-accent: #E2FCD9CC;
+    --btn-accent-hover: #C0FAB4;
+    --btn-alt: #FFBD3A;
+    --btn-alt-hover: #E6A732;
 }
 
+a, button, input, .card {
+    transition: all .15s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
 
 header {
     display: flex;
@@ -44,22 +54,38 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    right: 0;
     height: 80px;
     padding: 12px 24px;
-    background-color: var(--bg-primary);
-    border-bottom: 1px solid var(--border-secondary);
-    box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-main);
+    border-bottom: 1px solid var(--border-medium);
+    box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    width: 193.03px;
-    height: 30.08px;
+    height: 30px;
+    width: 193px;
+}
+
+.text-base {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-base);
+}
+
+.text-md {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-base);
 }
 
 @media (min-width: 768px) {
     header {
         padding: 12px 120px;
         box-shadow: none;
+    }
+
+    .text-base, .text-md {
+        font-size: 16px;
     }
 }

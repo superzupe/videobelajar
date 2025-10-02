@@ -1,9 +1,3 @@
-.text-base {
-    font-weight: 500;
-    font-size: 14px;
-    color: var(--text-secondary);
-}
-
 nav {
     display: flex;
     flex-direction: row;
@@ -11,19 +5,15 @@ nav {
     gap: 20px;
 }
 
-nav a {
-    text-decoration: none;
-}
-
 .fa-bars {
     display: block;
     width: 24px;
     height: 24px;
-    color: var(--text-tertiary);
+    color: var(--text-gray);
 }
 
 .fa-bars:hover {
-    color: var(--text-secondary);
+    color: var(--text-base);
 }
 
 .nav-link, .nav-avatar {
@@ -36,7 +26,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 100px auto;
+    margin: 120px auto 40px;
 }
 
 .hero-content {
@@ -45,13 +35,12 @@ nav a {
     justify-content: center;
     align-items: center;
     background:
-        linear-gradient(#000000CC, #000000CC),
+        linear-gradient(var(--bg-overlay), var(--bg-overlay)),
         url(../assets/image/banner-hero.png);
     background-size: cover;
     width: 100%;
     max-width: 320px;
-    height: 400px;
-    padding: 64px 20px;
+    padding: 40px 20px;
     gap: 24px;
     border: none;
     border-radius: 10px;
@@ -69,27 +58,27 @@ nav a {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 24px;
-    color: var(--text-fourthy);
+    color: var(--text-inverse);
 }
 
 .hero-header p {
-    color: var(--text-fourthy);
+    color: var(--text-inverse);
 }
 
 .hero-btn {
-    width: 280px;
-    padding: 10px 26px;
-    gap: 8px;
-    background-color: var(--btn-1);
+    width: 100%;
+    max-width: 280px;
+    min-height: 40px;
+    background-color: var(--btn-primary);
     font-size: 14px;
-    font-weight: 600;
-    color: var(--text-fourthy);
+    font-weight: 400;
+    color: var(--text-inverse);
     border: none;
     border-radius: 10px;
 }
 
 .hero-btn:hover {
-    background-color: var(--btn-2)
+    background-color: var(--btn-primary-hover)
 }
 
 .videos {
@@ -112,7 +101,7 @@ nav a {
     font-family: "Poppins", sans-serif;
     font-size: 24px;
     font-weight: 600;
-    color: var(--text-primary)
+    color: var(--text-main)
 }
 
 .videos-filter {
@@ -135,15 +124,10 @@ nav a {
     align-items: center;
     height: 46px;
     padding: 20px 25px 20px 0;
-    list-style: none;
-}
-
-.videos-filter li a {
-    text-decoration: none;
 }
 
 .filter {
-    color: var(--text-fifthy);
+    color: var(--text-accent);
 }
 
 .filter-divider {
@@ -151,7 +135,7 @@ nav a {
     height: 6px;
     border: none;
     border-radius: 10px;
-    background-color: var(--text-fifthy);
+    background-color: var(--text-accent);
 }
 
 
@@ -164,18 +148,18 @@ nav a {
 .card {
     display: flex;
     flex-direction: column;
-    background-color: var(--bg-primary);
+    background-color: var(--bg-main);
     width: 100%;
     max-width: 320px;
     min-height: 147px;
     padding: 16px;
     gap: 8px;
-    border: 1px solid var(--border-secondary);
+    border: 1px solid var(--border-medium);
     border-radius: 10px;
 }
 
 .card:hover {
-    border: 1px solid var(--border-tertiary)
+    border: 1px solid var(--border-dark)
 }
 
 
@@ -203,7 +187,7 @@ nav a {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 600;
-    color: var(--text-primary)
+    color: var(--text-main)
 }
 
 .subtitle, .subtitle-2 {
@@ -224,13 +208,13 @@ nav a {
 }
 
 .instructor-identity h6 {
-    color: var(--text-primary)
+    color: var(--text-main)
 }
 
 .instructor-identity p {
     font-size: 12px;
     font-weight: 400;
-    color: var(--text-secondary)
+    color: var(--text-base)
 }
 
 .company {
@@ -266,33 +250,36 @@ nav a {
 }
 
 .rating label {
-    color: var(--text-sixthy);
+    color: var(--text-gray-light);
     cursor: pointer;
 }
 
 .rating input:checked~label {
-    color: var(--btn-7);
+    color: var(--btn-alt);
 }
 
 .rating input:hover,
 .rating input:hover~label {
-    color: var(--btn-7)
+    color: var(--btn-alt)
 }
 
 .card-price {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-weight: 600;
-    color: var(--btn-1)
+    color: var(--btn-primary)
 }
 
+.cta {
+    margin: 40px auto;
+}
 
 .cta-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#000000CC, #000000CC),
+    background: linear-gradient(var(--bg-overlay), var(--bg-overlay)),
         url(../assets/image/banner-cta.png);
     background-size: cover;
     width: 100%;
@@ -307,7 +294,8 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     gap: 40px;
 }
 
@@ -322,18 +310,18 @@ nav a {
 .cta-label {
     font-size: 16px;
     font-weight: 500;
-    color: var(--text-sixthy)
+    color: var(--text-gray-light)
 }
 
 .cta-header h3 {
     font-family: "Poppins", sans-serif;
     font-size: 24px;
     font-weight: 600;
-    color: var(--text-fourthy)
+    color: var(--text-inverse)
 }
 
 .cta-desc {
-    color: var(--text-seventhy)
+    color: var(--text-bg-light)
 }
 
 .cta-form {
@@ -345,44 +333,45 @@ nav a {
 }
 
 .cta-form input {
-    text-align: center;
     width: 280px;
+    text-align: center;
     padding: 10px 8px 10px 12px;
-    color: var(--text-primary);
-    border: 1px solid var(--border-primary);
+    color: var(--text-main);
+    border: 1px solid var(--border-light);
     border-radius: 6px;
 }
 
 .cta-form input:focus {
-    outline: var(--border-secondary);
+    outline: var(--border-medium);
 
 }
 
 .cta-form button {
     width: 280px;
     padding: 10px;
-    background-color: var(--btn-7);
+    background-color: var(--btn-alt);
     font-size: 14px;
     font-weight: 700;
-    color: var(--text-fourthy);
+    color: var(--text-inverse);
     border: none;
     border-radius: 6px;
 }
 
 .cta-form button:hover {
-    background-color: var(--btn-8);
+    background-color: var(--btn-alt-hover);
 }
 
 footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 427px;
     padding: 20px;
     gap: 16px;
-    background-color: var(--bg-primary);
-    border-top: 1px solid var(--border-secondary);
+    background-color: var(--bg-main);
+    border-top: 1px solid var(--border-medium);
 }
 
 .footer-top {
@@ -398,7 +387,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     gap: 16px;
 }
 
@@ -411,17 +401,17 @@ footer {
 .footer-info h4 {
     font-size: 14px;
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--text-main);
 }
 
 .footer-info p {
-    color: var(--text-primary)
+    color: var(--text-main)
 }
 
 .footer-link {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 20px;
 }
 
 .footer-col {
@@ -435,20 +425,20 @@ footer {
 .footer-col h5 {
     font-size: 16px;
     font-weight: 700;
-    color: var(--text-primary)
+    color: var(--text-main)
 }
 
 .footer-col button {
-    background-color: var(--bg-primary);
+    background-color: var(--bg-main);
     border: none;
 }
 
 .fa-chevron-right {
-    color: var(--text-secondary);
+    color: var(--text-base);
 }
 
 .fa-chevron-right:hover {
-    color: var(--text-tertiary);
+    color: var(--text-gray);
 }
 
 .footer-col ul {
@@ -456,17 +446,18 @@ footer {
 }
 
 .footer-divider {
-    width: 320px;
+    width: 100%;
     height: 1px;
-    margin: 32px 0 0 0;
-    background-color: var(--border-secondary);
+    margin: 10px 0 0 0;
+    background-color: var(--border-medium);
 }
 
 .footer-bottom {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     gap: 12px;
 }
 
@@ -483,34 +474,29 @@ footer {
     width: 35px;
     height: 35px;
     padding: 4px;
-    list-style: none;
-    border: 1px solid var(--border-tertiary);
+    border: 1px solid var(--border-dark);
     border-radius: 50%;
 }
 
 .footer-bottom ul li:hover {
-    border: 1px solid var(--border-secondary);
+    border: 1px solid var(--border-medium);
 }
 
 .fa-brands {
     width: 20px;
-    color: var(--text-primary)
+    color: var(--text-main)
 }
 
 
 
 @media (min-width: 1024px) {
-    .text-base {
-        font-size: 16px;
-    }
-
     .nav-link {
         display: block;
     }
 
     .nav-link:hover {
         font-weight: 700;
-        color: var(--text-tertiary)
+        color: var(--text-gray)
     }
 
     .nav-avatar {
@@ -521,17 +507,20 @@ footer {
     }
 
     .nav-avatar:hover {
-        box-shadow: 0 0 1px 1px var(--border-tertiary);
+        box-shadow: 0 0 1px 1px var(--border-dark);
     }
 
     .fa-bars {
         display: none;
     }
 
+    .hero, .cta {
+        margin: 140px auto 64px;
+    }
+
     .hero-content {
         max-width: 1200px;
-        min-height: 400px;
-        padding: 90px 140px 64px;
+        padding: 82px 140px 64px;
     }
 
     .hero-header h1 {
@@ -539,7 +528,9 @@ footer {
     }
 
     .hero-btn {
-        width: 369px;
+        width: 100%;
+        max-width: 369px;
+        min-height: 42px;
         font-size: 16px;
         font-weight: 700;
     }
@@ -626,13 +617,17 @@ footer {
         font-size: 24px;
     }
 
+    .cta {
+        margin: 64px auto;
+    }
+
     .cta-content {
         max-width: 1200px;
         padding: 90px 140px 64px
     }
 
     .cta-body {
-        width: 525px;
+        max-width: 525px;
     }
 
     .cta-label {
@@ -645,20 +640,22 @@ footer {
 
     .cta-form {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
         min-height: 58px;
         padding: 8px;
         gap: 20px;
-        background-color: var(--bg-primary);
+        background-color: var(--bg-main);
         border: none;
         border-radius: 10px;
     }
 
     .cta-form input {
         text-align: start;
-        width: 357px;
-        padding: 0 0 0 8px;
+        width: 100%;
+        max-width: 356px;
+        height: 42px;
+        border: none;
     }
 
     .cta-form button {
@@ -669,7 +666,7 @@ footer {
 
     .footer {
         padding: 60px 120px;
-        gap: 20px
+        gap: 20px;
     }
 
     .footer-top {
@@ -709,27 +706,22 @@ footer {
     .footer-col ul {
         display: flex;
         flex-direction: column;
-        gap: 13px;
-    }
-
-    .footer-col ul li {
-        list-style: none;
+        gap: 20px;
     }
 
     .footer-col ul li a {
-        text-decoration: none;
         font-size: 16px;
         font-weight: 500;
-        color: var(--text-secondary);
+        color: var(--text-base);
     }
 
     .footer-divider {
-        width: 1200px;
+        margin: 32px 0 0 0;
     }
 
     .footer-bottom {
         flex-direction: row-reverse;
         justify-content: space-between;
-        width: 1200px;
+        max-width: 1200px;
     }
 }
