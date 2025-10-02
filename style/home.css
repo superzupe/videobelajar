@@ -690,7 +690,7 @@ footer {
 
     .footer-link {
         flex-direction: row;
-        gap: 15px;
+        gap: 28px;
     }
 
     .footer-col {
