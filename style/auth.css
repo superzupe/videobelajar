@@ -75,6 +75,23 @@ label span {
     border-radius: 6px;
 }
 
+.password-input {
+    width: 100%;
+    position: relative;
+}
+
+.password-input button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 24px;
+    background: none;
+    color: var(--text-gray-light);
+    border: none;
+    cursor: pointer;
+}
+
 .phone {
     width: 122px;
 }

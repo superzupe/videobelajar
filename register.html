@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
-        <link rel="stylesheet" href="style/base.css">
-        <link rel="stylesheet" href="style/auth.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/auth.css">
 </head>
 
 <body>
@@ -18,89 +19,89 @@
     </header>
 
     <section class="container">
-            <div class="card">
-                <div class="heading">
-                    <h3 class="heading-title">Pendaftaran Akun</h3>
-                    <p class="text-md">Yuk, daftarkan akunmu sekarang juga!</p>
-                </div>
+        <div class="card">
+            <div class="heading">
+                <h3 class="heading-title">Pendaftaran Akun</h3>
+                <p class="text-md">Yuk, daftarkan akunmu sekarang juga!</p>
+            </div>
 
-                <form>
-                    <div class="form-group-wrapper">
-                        <div class="form-group">
-                            <label for="nama" class="text-md">
-                                Nama Lengkap <span>*</span>
-                            </label>
-                            <input type="text" id="nama" name="nama" autocomplete="name" required
+            <form>
+                <div class="form-group-wrapper">
+                    <div class="form-group">
+                        <label for="nama" class="text-md">
+                            Nama Lengkap <span>*</span>
+                        </label>
+                        <input type="text" id="nama" name="nama" autocomplete="name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="text-md">
+                            E-mail <span>*</span>
+                        </label>
+                        <input type="email" id="email" name="email" autocomplete="email" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="text-md">
+                            No. Hp <span>*</span>
+                        </label>
+                        <div class="form-phone">
+                            <select id="countryCode" class="form-input phone">
+                                <option value="+62">🇮🇩 +62</option>
+                                <option value="+60">🇲🇾 +60</option>
+                                <option value="+1">🇺🇸 +1</option>
+                                <option value="+44">🇬🇧 +44</option>
+                            </select>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel-country-code" required
                                 class="form-input">
                         </div>
-                        <div class="form-group">
-                            <label for="email" class="text-md">
-                                E-mail <span>*</span>
-                            </label>
-                            <input type="email" id="email" name="email" autocomplete="email" required
-                                class="form-input">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" class="text-md">
-                                No. Hp <span>*</span>
-                            </label>
-                            <div class="form-phone">
-                                <select id="countryCode" class="form-input phone">
-                                    <option value="+62">🇮🇩 +62</option>
-                                    <option value="+60">🇲🇾 +60</option>
-                                    <option value="+1">🇺🇸 +1</option>
-                                    <option value="+44">🇬🇧 +44</option>
-                                </select>
-                                <input type="tel" id="phone" name="phone" autocomplete="tel-country-code" required
-                                    class="form-input">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="sandi" class="text-md">
-                                Kata Sandi <span>*</span>
-                            </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="sandi" class="text-md">
+                            Kata Sandi <span>*</span>
+                        </label>
+                        <div class="password-input">
                             <input type="password" id="sandi" name="sandi" autocomplete="current-password" required
                                 class="form-input">
+                            <button><i class="fa-solid fa-eye-slash"></i></button>
                         </div>
-                        <div class="form-group">
-                            <label for="confirm" class="text-md">
-                                Konfirmasi Kata Sandi <span>*</span>
-                            </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm" class="text-md">
+                            Konfirmasi Kata Sandi <span>*</span>
+                        </label>
+                        <div class="password-input">
                             <input type="password" id="confirm" name="confirm" autocomplete="current-password" required
                                 class="form-input">
-                        </div>
-                        <div class="forgot-password">
-                            <a href="#">Lupa password?</a>
+                            <button><i class="fa-solid fa-eye-slash"></i></button>
                         </div>
                     </div>
+                    <div class="forgot-password">
+                        <a href="#">Lupa password?</a>
+                    </div>
+                </div>
 
-                    <div class="actions">
-                        <a href="login.html"
-                            class="btn btn-primary">
-                            Masuk
-                        </a>
-                        <button type="submit"
-                            class="btn btn-secondary">
-                            Daftar
-                        </button>
-                    </div>
+                <div class="actions">
+                    <a href="login.html" class="btn btn-primary">
+                        Masuk
+                    </a>
+                    <button type="submit" class="btn btn-secondary">
+                        Daftar
+                    </button>
+                </div>
 
-                    <div class="divider">
-                        <div class="divider-line"></div>
-                        <span class="text-md">atau</span>
-                        <div class="divider-line"></div>
-                    </div>
-                    <div
-                        class="action">
-                        <button type="button"
-                            class="btn-social">
-                            <img src="assets/icon/google-icon.svg" alt="google-icon">
-                            <span>Masuk dengan
-                                Google</span>
-                        </button>
-                    </div>
-                </form>
-            </div>
+                <div class="divider">
+                    <div class="divider-line"></div>
+                    <span class="text-md">atau</span>
+                    <div class="divider-line"></div>
+                </div>
+                <div class="action">
+                    <button type="button" class="btn-social">
+                        <img src="assets/icon/google-icon.svg" alt="google-icon">
+                        <span>Masuk dengan
+                            Google</span>
+                    </button>
+                </div>
+            </form>
+        </div>
     </section>
 </body>
 
